@@ -1,7 +1,6 @@
 import hashlib
 from bisect import bisect_right, bisect
 
-
 def hash_fn(key, total_slots):
     sha = hashlib.sha256()
     sha.update(bytes(key,'utf-8'))
